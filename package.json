@@ -3,26 +3,38 @@
   "version": "1.0.0",
   "description": "Vanilla JS object utility for working with complex JavaScript objects",
   "main": "deeper-key.js",
-  "dependencies": {
-    "chai": "^4.1.2"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "jscoverage": "^0.6.0",
     "mocha": "^5.0.0",
+    "mocha-lcov-reporter": "^1.3.0",
     "nyc": "^11.4.1"
   },
   "scripts": {
-    "test": "nyc mocha deeper-key.test.js"
+    "test": "mocha deeper-key.test.js",
+    "testcoverage": "nyc npm test",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/johnmcguin/deeper-key.git"
   },
   "keywords": [
-    "object utility", "object utilities",
-    "deep key", "deep keys", "deeper key", "pick deep",
-    "tree crawling", "tree walking",
-    "object traverse", "object traversing",
-    "object crawling", "object walking"
+    "object utility",
+    "object utilities",
+    "deep key",
+    "deep keys",
+    "deeper key",
+    "pick deep",
+    "tree crawling",
+    "tree walking",
+    "object traverse",
+    "object traversing",
+    "object crawling",
+    "object walking"
   ],
   "author": "John McGuin <johnmcguin88@gmail.com>",
   "license": "MIT",
