@@ -3,7 +3,7 @@ Vanilla JS object utility for working with complex JavaScript objects
 
 
 <!-- [![Build Status](https://travis-ci.org/johnmcguin/deeper-key.svg?branch=master)](https://travis-ci.org/johnmcguin/deeper-key.svg?branch=master) -->
-[![Packagist](https://img.shields.io/packagist/v/johnmcguin/deeper-key.svg)]()
+<!-- [![Packagist](https://img.shields.io/packagist/v/johnmcguin/deeper-key.svg)]() -->
 [![Coverage Status](https://coveralls.io/repos/johnmcguin/deeper-key/badge.svg?branch=master)](https://coveralls.io/r/johnmcguin/deeper-key?branch=master)
 
 # Features
