@@ -17,6 +17,10 @@ $ npm install deeper-key
 ```
 # Usage
 
+```javascript
+let { deepKeys, deepExists, deepValues } = require('deeper-key')
+```
+
 ### ```deepKeys```
 ```javascript
 let testData = {
