@@ -3,7 +3,7 @@
 module.exports = {
   deepKeys, 
   deepExists,
-  deepValue
+  deepValues
 };
 
 // api
@@ -15,10 +15,10 @@ function deepExists(obj, key) {
   return _deepKeys(obj, []).includes(key);
 }
 
-function deepValue(obj, targetKey) {
+function deepValues(obj, targetKey) {
   let results = [];
-  _deepValue(obj, targetKey, results);
-  return results;
+  _deepValues(obj, targetKey, results);
+  return _flatten(results);
 }
 
 
@@ -42,11 +42,11 @@ function _deepKeys(obj, initializer) {
   }, initializer);
 } 
 
-function _deepValue(obj, targetKey, results) {
+function _deepValues(obj, targetKey, results) {
   if(_isObject(obj)) {
-    if(obj[targetKey]) return results.push(obj[targetKey]);
+    if(obj[targetKey]) results.push(obj[targetKey]);
     for(let key in obj) {
-      _deepValue(obj[key], targetKey, results);
+      _deepValues(obj[key], targetKey, results);
     }
   }
 }
@@ -54,4 +54,10 @@ function _deepValue(obj, targetKey, results) {
 function _isObject(value) {
   let type = typeof value;
   return value != null && (type == 'object' || type == 'function');
+}
+
+function _flatten(arr) {
+  return arr.reduce((accum, val) => {
+    return accum.concat(Array.isArray(val) ? _flatten(val) : val);
+  }, []);
 }
