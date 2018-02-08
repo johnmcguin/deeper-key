@@ -21,7 +21,21 @@ function deepValues(obj, targetKey) {
   return _flatten(results);
 }
 
-
+let testData = {
+  results: {
+      success: true,
+      arr: ['string'],
+      nestedResults: {
+          success: true,
+          numbers: [1,2,3,4],
+          deeplyNestedResults: {
+              success: ['string value']
+          }
+      }
+  }
+};
+let allKeys = deepKeys(testData);
+console.log(allKeys);
 // private functions
 function _deepKeys(obj, initializer) {
   let objectKeys = Object.keys(obj);
@@ -34,6 +48,7 @@ function _deepKeys(obj, initializer) {
 
     if(Array.isArray(obj[currentKey])) {
       obj[currentKey].forEach(item => {
+        if(typeof item === 'string') return;
         _deepKeys(item, accumulator);
       });
     }

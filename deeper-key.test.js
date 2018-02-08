@@ -11,7 +11,7 @@ describe('Deep Keys', () => {
                 success: true,
                 numbers: [1,2,3,4],
                 deeplyNestedResults: {
-                    success: true
+                    success: ['string value']
                 }
             }
         }
