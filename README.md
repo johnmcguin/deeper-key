@@ -1,8 +1,10 @@
 # deeper-key
-[![Build Status](https://travis-ci.org/johnmcguin/deeper-key.svg?branch=master)](https://travis-ci.org/johnmcguin/deeper-key.svg?branch=master)
-[![Packagist](https://img.shields.io/packagist/v/deeper-key.svg)]()
-[![Coverage Status](https://coveralls.io/repos/johnmcguin/deeper-key/badge.svg?branch=master)](https://coveralls.io/r/johnmcguin/deeper-key?branch=master)
 Vanilla JS object utility for working with complex JavaScript objects
+
+
+<!-- [![Build Status](https://travis-ci.org/johnmcguin/deeper-key.svg?branch=master)](https://travis-ci.org/johnmcguin/deeper-key.svg?branch=master) -->
+[![Packagist](https://img.shields.io/packagist/v/johnmcguin/deeper-key.svg)]()
+[![Coverage Status](https://coveralls.io/repos/johnmcguin/deeper-key/badge.svg?branch=master)](https://coveralls.io/r/johnmcguin/deeper-key?branch=master)
 
 # Features
 - method to get all keys from a given object
@@ -11,7 +13,7 @@ Vanilla JS object utility for working with complex JavaScript objects
 
 # Installation
 ```sh
-$ npm install --save deeper-key
+$ npm install deeper-key
 ```
 # Usage
 
