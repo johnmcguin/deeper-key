@@ -1,6 +1,6 @@
 {
   "name": "deeper-key",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Vanilla JS object utility for working with complex JavaScript objects",
   "main": "deeper-key.js",
   "dependencies": {},
