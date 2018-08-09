@@ -6,12 +6,12 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "^4.1.2",
-    "coveralls": "^3.0.0",
+    "coveralls": "^3.0.2",
     "istanbul": "^0.4.5",
     "jscoverage": "^0.6.0",
-    "mocha": "^5.0.0",
+    "mocha": "^5.2.0",
     "mocha-lcov-reporter": "^1.3.0",
-    "nyc": "^11.4.1"
+    "nyc": "^11.9.0"
   },
   "scripts": {
     "test": "mocha deeper-key.test.js",
